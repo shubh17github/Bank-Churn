@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <h1> ***********WELCOME**********</h1>
+
+    </head>
+    <body>
+        <form action="/predict" method="POST">
+            <h1>Input Data fro Bank customer Churn Prediction </h1><br><br>
+            <label>CREDIT SCORE(PLEASE ENTER VALUE IN FLOAT)</label><input type="text" name="Credit_score"> <br><br>
+            <label>GEOGRAPHY('France':0,'Spain':1,'Germany':2)</label><input type="text" name="Geography"> <br><br>
+            <label>GENDER('Female':0, 'Male':1)</label><input type="text" name="Gender"> <br><br>
+            <label>AGE(PLEASE ENTER VALUE IN INT)</label><input type="text" name="Age"> <br><br>
+            <label>TENURE(PLEASE ENTER VALUE IN INT)</label><input type="text" name="Tenure"> <br><br>
+            <label>BALANCE(PLEASE ENTER VALUE IN FLOAT)</label><input type="text" name="Balance"> <br><br>
+            <label>NO.OF.PRODUCT(PLEASE ENTER VALUE 1 TO 4)</label><input type="text" name="NumOfProducts"> <br><br>
+            <label>HAS CRTDIT CARD(YES=1,NO=0)</label><input type="text" name="HasCrCard"> <br><br>
+            <label>IS ACTIVE MENBER(YES=1,NO=0)</label><input type="text" name="IsActiveMember"> <br><br>
+            <label>ESTIMATED SALARY(PLEASE ENTER VALUE IN FLOAT)</label><input type="text" name="EstimatedSalary"> <br><br>
+            <input type="submit" value="SUBMIT">
+
+
+        </form>
+        <h1>Prediction Result  if prediction=1 ( Exited),prediction=0 (Not Exited)</h1>
+        {{pred}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    </body>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
